@@ -1,4 +1,7 @@
 import React from "react";
+
+// components
+import images from "../../images";
 import Menu from "../menu";
 
 function Banner() {
@@ -6,6 +9,7 @@ function Banner() {
     <section className="banner">
       <div className="container">
         <Menu />
+        <img src={images.logo} alt="logo" className="banner__logo" />
       </div>
     </section>
   );
