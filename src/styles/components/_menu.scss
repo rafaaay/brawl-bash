@@ -1,0 +1,65 @@
+.menu {
+  ul {
+    display: flex;
+  }
+
+  li {
+    font-size: $font-size-medium;
+    flex: 1;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $color-yellow;
+    color: $color-white;
+    transform: translateZ(1px) skewX(-12deg);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $color-dark;
+    text-shadow: 1px 1px 1px $color-dark;
+    position: relative;
+    border: 2px solid $color-dark;
+
+    span {
+      transform: translateZ(1px) skewX(12deg);
+      display: inline-block;
+    }
+
+    &:first-child {
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+      &::before {
+        width: 97%;
+        right: 0;
+      }
+    }
+
+    &:last-child {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      &::before {
+        width: 97%;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-color: $color-yellow-damped;
+    }
+
+    &.active {
+      background-color: $color-yellow-damped;
+      color: $color-greyed-text;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: burlywood;
+
+      &::before {
+        background-color: $color-yellow-bright;
+      }
+    }
+  }
+}
