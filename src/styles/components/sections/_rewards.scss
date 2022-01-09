@@ -1,0 +1,75 @@
+.rewards {
+  background: url("../../../../public/images/bg_reward.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+    padding: 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90vh;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+  }
+
+  .hexa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    height: 35rem;
+    width: 40rem;
+    background-color: $color-grey-dark;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-large;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $color-dark;
+  }
+
+  &__block {
+    background-color: $color-yellow;
+    color: $color-white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $color-dark;
+    font-size: $font-size-large;
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 70%;
+
+    &--one {
+      align-self: center;
+      clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+      padding-left: 0;
+    }
+
+    &--two {
+      align-self: center;
+      justify-self: flex-end;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+      padding-right: 0;
+    }
+
+    &--three {
+      align-self: center;
+      clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+      padding-left: 0;
+    }
+
+    &--four {
+      align-self: center;
+      justify-self: flex-end;
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+      padding-right: 0;
+    }
+  }
+}

@@ -1,7 +1,13 @@
 @import "./normalize";
 @import "./variables";
 @import "./typography";
+@import "./mixins";
 @import "./global";
 
-@import "./components/menu";
-@import "./components/banner";
+@import "./components/atoms/article";
+
+@import "./components/sections/menu";
+@import "./components/sections/banner";
+@import "./components/sections/about";
+@import "./components/sections/rewards";
+@import "./components/sections/advisors";

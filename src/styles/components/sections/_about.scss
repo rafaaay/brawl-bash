@@ -1,0 +1,36 @@
+.about {
+  background: url("../../../../public/images/bg_about.jpg") no-repeat center
+    fixed;
+
+  .container {
+    padding: 4rem 0;
+  }
+
+  .articles {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .stats,
+  .tokenmics {
+    flex: 1;
+    height: 50rem;
+    border: 2px solid $color-dark;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .tokenmics {
+    background-color: $color-yellow;
+  }
+
+  .stats {
+    background-color: $color-grey-dark;
+  }
+}

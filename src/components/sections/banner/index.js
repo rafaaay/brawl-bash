@@ -1,8 +1,8 @@
 import React from "react";
 
 // components
-import images from "../../images";
-import Menu from "../menu";
+import images from "../../../images";
+import Menu from "../../atoms/menu";
 
 function Banner() {
   return (
