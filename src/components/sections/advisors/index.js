@@ -1,9 +1,15 @@
 import React from "react";
 
+import AdvisorBottom from "../../molecules/advisor_bottom";
+import AdvisorTop from "../../molecules/advisor_top";
+
 function Advisors() {
   return (
     <section className="advisors">
-      <h1>Advisors</h1>
+      <div className="container">
+        <AdvisorTop />
+        <AdvisorBottom />
+      </div>
     </section>
   );
 }

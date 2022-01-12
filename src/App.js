@@ -5,6 +5,8 @@ import "./styles/style.scss";
 import About from "./components/sections/about";
 import Banner from "./components/sections/banner";
 import Rewards from "./components/sections/rewards";
+import Advisors from "./components/sections/advisors";
+import Footer from "./components/sections/footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Banner />
       <About />
       <Rewards />
+      <Advisors />
+      <Footer />
     </div>
   );
 }

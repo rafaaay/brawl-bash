@@ -1,0 +1,16 @@
+.advisor_block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    width: 10rem;
+    height: 10rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
