@@ -1,6 +1,5 @@
 .about {
-  background: url("../../../../public/images/bg_about.jpg") no-repeat center
-    fixed;
+  background: url("../../../../public/images/bg_about.jpg") no-repeat center;
 
   .container {
     padding: 4rem 0;
@@ -20,10 +19,10 @@
   .stats,
   .tokenmics {
     flex: 1;
-    height: 50rem;
     border: 2px solid $color-dark;
     border-radius: 5px;
     position: relative;
+    min-height: 50rem;
   }
 
   .tokenmics {

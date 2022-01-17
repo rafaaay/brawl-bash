@@ -6,7 +6,6 @@
   display: flex;
   padding: 1rem;
   transition: all 0.3s;
-
   &:hover {
     background-color: $color-yellow;
   }
@@ -16,11 +15,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 6rem;
+  }
+
+  &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    padding: 4rem 1rem;
     text-align: center;
   }
 
@@ -38,6 +40,6 @@
 
   &__text {
     font-family: $font-family-secondary;
-    font-size: $font-size-medium;
+    font-weight: bold;
   }
 }

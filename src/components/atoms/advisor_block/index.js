@@ -7,11 +7,13 @@ function AdvisorBlock() {
       <div className="image">
         <img src={images.advisor} alt="advisor name" />
       </div>
-      <div className="text">
-        <p>
-          Some text goes here, adding these lines because lorem ipsum ain't
-          working!
-        </p>
+      <div className="body">
+        <div className="text">
+          <p>
+            Some text goes here, adding these lines because lorem ipsum ain't
+            working!
+          </p>
+        </div>
       </div>
     </div>
   );

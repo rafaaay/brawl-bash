@@ -1,0 +1,51 @@
+.stats {
+  padding: 0 1rem 0 4rem;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .logo {
+    width: 15rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .stat_bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__title {
+      font-family: $font-family-secondary;
+      color: $color-white;
+    }
+  }
+
+  .progress_bar {
+    flex: 1;
+    height: 2rem;
+    position: relative;
+    background: $color-grey-darker;
+    border-radius: 2.5rem;
+
+    > span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $color-yellow;
+      height: 100%;
+      border-radius: 2.5rem;
+    }
+  }
+}

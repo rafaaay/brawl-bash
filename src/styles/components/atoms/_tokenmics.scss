@@ -1,0 +1,43 @@
+.tokenmics {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__header {
+    text-align: center;
+    color: $color-white;
+    font-size: $font-size-large;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $color-dark;
+  }
+
+  &__body {
+    background: url("../../../../public/images/page_2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1;
+    padding: 6rem 4rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h3 {
+      font-size: $font-size-medium;
+    }
+
+    li {
+      font-size: $font-size-medium;
+      font-family: $font-family-secondary;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import images from "../../../images";
 import JoinDiscord from "../../atoms/discord";
+import JoinNewsletter from "../../atoms/newsletter";
 
 function Footer() {
   return (
@@ -10,7 +11,7 @@ function Footer() {
 
         <div className="blocks">
           <JoinDiscord />
-          <JoinDiscord />
+          <JoinNewsletter />
         </div>
 
         <div className="footer__nav">
