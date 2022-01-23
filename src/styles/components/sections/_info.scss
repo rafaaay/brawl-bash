@@ -1,0 +1,38 @@
+.info {
+  min-height: 100vh;
+  background: url("../../../../public/images/bg_about.jpg") no-repeat center;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .stats,
+  .tokenmics {
+    flex: 1;
+    border: 2px solid $color-dark;
+    border-radius: 5px;
+    position: relative;
+    min-height: 82rem;
+
+    @include mobile {
+      min-height: auto;
+      width: 100%;
+    }
+  }
+
+  .tokenmics {
+    background-color: $color-yellow;
+  }
+
+  .stats {
+    background-color: $color-grey-dark;
+  }
+}

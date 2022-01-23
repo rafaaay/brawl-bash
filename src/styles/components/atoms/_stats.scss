@@ -1,6 +1,10 @@
 .stats {
   padding: 0 1rem 0 4rem;
 
+  @include mobile {
+    padding: 2rem 1rem;
+  }
+
   &__header {
     display: flex;
     justify-content: center;

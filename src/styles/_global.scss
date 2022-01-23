@@ -3,7 +3,12 @@ html {
 }
 
 .container {
-  width: 100rem;
+  width: 132rem;
   margin: 0 auto;
   padding: 2rem 4rem;
+
+  @include mobile {
+    width: 100%;
+    padding: 1rem;
+  }
 }

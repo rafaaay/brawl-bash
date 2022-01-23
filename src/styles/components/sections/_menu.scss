@@ -1,4 +1,15 @@
 .menu {
+  position: fixed;
+  width: 132rem;
+  z-index: 10;
+  left: 50%;
+  top: 2rem;
+  transform: translateX(-50%);
+
+  @include mobile {
+    display: none;
+  }
+
   ul {
     display: flex;
   }
@@ -16,6 +27,7 @@
     text-shadow: 1px 1px 1px $color-dark;
     position: relative;
     border: 2px solid $color-dark;
+    cursor: pointer;
 
     span {
       transform: translateZ(1px) skewX(12deg);

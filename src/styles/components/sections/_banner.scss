@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   position: relative;
 
+  // @include mobile {
+  //   height: 70vh;
+  // }
+
   &__logo {
     position: absolute;
     top: 50%;

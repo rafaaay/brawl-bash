@@ -4,7 +4,7 @@ import Info from "../../molecules/info";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about section">
       <div className="container">
         <Articles />
         <Info />

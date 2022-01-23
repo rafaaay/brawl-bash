@@ -4,8 +4,16 @@
   position: relative;
   min-height: 50vh;
 
+  @include mobile {
+    min-height: auto;
+  }
+
   .container {
     padding: 20rem 0;
+
+    @include mobile {
+      padding: 6rem 2rem;
+    }
   }
 
   &__logo {
@@ -14,19 +22,30 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.7;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .blocks {
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__block {
-    left: 4rem;
-    bottom: 4rem;
     border: 2px solid $color-dark;
     transform: skewX(-5deg);
     border-radius: 5px;
+
+    @include mobile {
+      transform: initial;
+    }
 
     &__container {
       display: flex;
@@ -46,6 +65,10 @@
       -webkit-text-stroke-color: $color-dark;
       text-shadow: 1px 1px 1px $color-dark;
       transform: skewX(5deg);
+
+      @include mobile {
+        transform: initial;
+      }
     }
 
     &__body {
@@ -70,6 +93,10 @@
       width: 75px;
       height: 75px;
       transform: skewX(5deg);
+
+      @include mobile {
+        transform: initial;
+      }
     }
 
     img {
@@ -78,6 +105,10 @@
 
     p {
       transform: skewX(5deg);
+
+      @include mobile {
+        transform: initial;
+      }
     }
   }
 
@@ -129,6 +160,11 @@
 
     .button {
       transform: skewX(-20deg);
+
+      @include mobile {
+        transform: initial;
+      }
+
       button {
         font-family: $font-family-primary;
         font-size: $font-size-medium;
@@ -142,6 +178,10 @@
         -webkit-text-stroke-color: $color-dark;
         box-shadow: 0px 4px $color-yellow-bright inset,
           0px -4px $color-yellow-damped inset;
+
+        @include mobile {
+          transform: initial;
+        }
       }
     }
   }
@@ -150,6 +190,10 @@
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+
+    @include mobile {
+      display: none;
+    }
 
     ul {
       display: flex;

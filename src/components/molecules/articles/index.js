@@ -3,11 +3,13 @@ import Article from "../../atoms/article";
 
 function Articles() {
   return (
-    <div className="articles">
-      <Article />
-      <Article />
-      <Article />
-    </div>
+    <section className="articles section">
+      <div className="container">
+        <Article />
+        <Article />
+        <Article />
+      </div>
+    </section>
   );
 }
 

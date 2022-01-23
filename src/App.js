@@ -7,12 +7,16 @@ import Banner from "./components/sections/banner";
 import Rewards from "./components/sections/rewards";
 import Advisors from "./components/sections/advisors";
 import Footer from "./components/sections/footer";
+import Articles from "./components/molecules/articles";
+import Info from "./components/molecules/info";
 
 function App() {
   return (
     <div>
       <Banner />
-      <About />
+      {/* <About /> */}
+      <Articles />
+      <Info />
       <Rewards />
       <Advisors />
       <Footer />

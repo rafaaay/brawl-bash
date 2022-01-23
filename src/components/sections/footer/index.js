@@ -5,7 +5,7 @@ import JoinNewsletter from "../../atoms/newsletter";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer section">
       <div className="container">
         <img src={images.logo} alt="logo" className="footer__logo" />
 

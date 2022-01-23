@@ -1,0 +1,16 @@
+.articles {
+  background: url("../../../../public/images/bg_about.jpg") no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    gap: 4rem;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}

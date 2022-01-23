@@ -4,10 +4,12 @@ import Tokenmics from "../../atoms/tokenmics";
 
 function Info() {
   return (
-    <div className="info">
-      <Tokenmics />
-      <Stats />
-    </div>
+    <section className="info section">
+      <div className="container">
+        <Tokenmics />
+        <Stats />
+      </div>
+    </section>
   );
 }
 

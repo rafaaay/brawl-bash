@@ -2,7 +2,7 @@ import React from "react";
 
 function Rewards() {
   return (
-    <section className="rewards">
+    <section className="rewards section">
       <div className="rewards__container container">
         <div className="rewards__block rewards__block--one">
           <div className="rewards__block__text">Block</div>

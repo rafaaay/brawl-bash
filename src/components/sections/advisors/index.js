@@ -5,7 +5,7 @@ import AdvisorTop from "../../molecules/advisor_top";
 
 function Advisors() {
   return (
-    <section className="advisors">
+    <section className="advisors section">
       <div className="container">
         <AdvisorTop />
         <AdvisorBottom />

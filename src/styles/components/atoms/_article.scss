@@ -2,20 +2,27 @@
   border: 2px solid $color-dark;
   border-radius: 5px;
   background-color: $color-grey-dark;
-  min-height: 35rem;
   display: flex;
   padding: 1rem;
   transition: all 0.3s;
+  min-height: 64rem;
+
+  @include mobile {
+    width: 35rem;
+    min-height: auto;
+  }
+
   &:hover {
     background-color: $color-yellow;
   }
 
   &__container {
     background: url("../../../../public/images/page.png");
-    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-position: center;
-    padding: 6rem;
+    background-size: 100%;
+    height: 100%;
+    padding: 80px 30px;
   }
 
   &__body {
@@ -41,5 +48,6 @@
   &__text {
     font-family: $font-family-secondary;
     font-weight: bold;
+    font-size: $font-size-normal;
   }
 }

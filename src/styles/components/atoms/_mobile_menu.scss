@@ -1,0 +1,59 @@
+.mobile_menu {
+  position: fixed;
+  height: 7.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($color: $color-yellow, $alpha: 0.6);
+  width: 100%;
+  padding: 1rem;
+  display: none;
+
+  @include mobile {
+    display: flex;
+  }
+
+  .logo {
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .btn_open {
+    height: 3rem;
+    width: 3rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: $color-yellow;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.3s;
+
+    &.closed {
+      top: -100vh;
+    }
+
+    .btn_close {
+      align-self: flex-end;
+    }
+
+    li {
+      font-size: $font-size-medium;
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -16,6 +16,10 @@
     align-items: center;
     gap: 4rem;
     position: relative;
+
+    @include mobile {
+      gap: 2rem;
+    }
   }
 
   .hexa {
@@ -34,6 +38,11 @@
     font-size: $font-size-large;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $color-dark;
+
+    @include mobile {
+      height: 25rem;
+      width: 30rem;
+    }
   }
 
   &__block {
@@ -42,12 +51,17 @@
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $color-dark;
     font-size: $font-size-large;
-    // border: 2px solid $color-dark;
     padding: 4rem 2rem;
     text-align: center;
     width: 70%;
     position: relative;
     z-index: 5;
+
+    @include mobile {
+      clip-path: none !important;
+      align-self: auto !important;
+      font-size: $font-size-medium;
+    }
 
     &--one {
       align-self: center;
